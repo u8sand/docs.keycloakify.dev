@@ -1,11 +1,11 @@
 ---
-description: Enable loading in a blink of an eye of login pages with --external-assets
+description: Enable loading in the blink of an eye of login pages with --external-assets
 ---
 
 # ⚡ Performance optimization
 
 {% hint style="warning" %}
-This only apply if your theme is integrated to to a React app. &#x20;
+This only applies if your theme is integrated with a React app. &#x20;
 
 If your Keycloak theme is a standalone react project you can ignore this section.&#x20;
 {% endhint %}

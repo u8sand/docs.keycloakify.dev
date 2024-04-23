@@ -1,13 +1,13 @@
 # 👨💻 👨💻 Quick start
 
 {% hint style="success" %}
-It's a good idea to first read this quick start section to understand the basic of how Keycloakify works.
+It's a good idea to first read this quick start section to understand the basics of how Keycloakify works.
 
 However, we recommend you start hacking from [**the demo setup**](https://github.com/garronej/keycloakify-demo-app) instead of setting up Keycloakify from scratch.
 {% endhint %}
 
 {% hint style="warning" %}
-Save yourself some time, have quick look at the [requirements page](./). **Windows** users in particular!
+Save yourself some time, have a quick look at the [requirements page](./). **Windows** users in particular!
 {% endhint %}
 
 ```
@@ -60,7 +60,7 @@ reactDom.render(
 );
 ```
 
-The above snippet of code assumes you are in a react project wich only purpose is to be a Keycloak theme.
+The above snippet of code assumes you are in a react project whose only purpose is to be a Keycloak theme.
 
 But if you want to make your keycloak theme an integral part of a preexisting React app you would apply the following modification to the above snipet:
 
@@ -96,7 +96,7 @@ But if you want to make your keycloak theme an integral part of a preexisting Re
 
 #### Real world example
 
-To give you an idea of what you can already achieve by only customizing the style the style,
+To give you an idea of what you can already achieve by only customizing the style,
 
 Here is [**the code**](https://github.com/InseeFrLab/onyxia-web/blob/012639d62327a9a56be80c46e32c32c9497b82db/src/app/components/KcApp.tsx) that produces:&#x20;
 
@@ -124,5 +124,5 @@ See also [this documentation section](limitations.md#i-have-established-that-a-p
 
 ### How to import the theme in Keycloak
 
-Specific instruction on how to proceed will be printed in the console with `yarn keycloak`.&#x20;
+Specific instructions on how to proceed will be printed in the console with `yarn keycloak`.&#x20;
 

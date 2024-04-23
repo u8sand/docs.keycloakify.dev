@@ -4,11 +4,11 @@ description: Test and debug your theme
 
 # 🧪 Development
 
-### Seeing the result live
+### Seeing the results live
 
-When building your page you want to see the result of your edit live.
+When building your page you want to see the results of your edits live.
 
-To acheave that with Keycloakify simply eddit:
+To achieve that with Keycloakify simply edit:
 
 ```diff
  import { getKcContext } from "keycloakify";
@@ -22,7 +22,7 @@ To acheave that with Keycloakify simply eddit:
 
 [See the getKcContext() call in the `keycloakify-demo-app#look_and_feel` project](https://github.com/garronej/keycloakify-demo-app/blob/f8b2ac1734c826646fc0c97e1c4633ae392e72c6/src/KcApp/kcContext.ts#L22-L23).
 
-then if you run `yarn start` you will see your login page display. **Dont forget to remove mockPageId before releasing** 😉.
+then if you run `yarn start` you will see your login page display. **Don't forget to remove mockPageId before releasing** 😉.
 
 {% hint style="success" %}
 The page is loaded with a default mock context.
@@ -32,10 +32,10 @@ To customize the mock kcContext please refer to [this example](https://github.co
 
 ### Testing in a real Keycloak instance
 
-Once you are done developping you want to test in an actual Keycloak instance to see if everything is working as expected.
+Once you are done developing you want to test in an actual Keycloak instance to see if everything is working as expected.
 
-Please refer to the related instruction printed on the console when running `yarn keycloak` in your project. &#x20;
+Please refer to the instructions printed on the console when running `yarn keycloak` in your project. &#x20;
 
 {% embed url="https://user-images.githubusercontent.com/6702424/176266833-61b9c734-b16f-4822-9409-374bf9a387e0.mp4" %}
-The instruction for starting a test container are displayed when you build the theme.
+The instructions for starting a test container are displayed when you build the theme.
 {% endembed %}

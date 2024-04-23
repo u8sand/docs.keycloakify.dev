@@ -9,7 +9,7 @@ This tool will only run natively on **Linux** and **Mac OS**.
 {% hint style="success" %}
 This tool will be maintained to stay compatible with every Keycloak version starting from [Keycloak Version 11](https://github.com/keycloak/keycloak/releases/tag/11.0.3).
 
-However, the default pages you will get (before you customize them) will always be the ones of Keycloak [v11.0.3](https://github.com/keycloak/keycloak/releases/tag/11.0.3) and some extra pages that didn't existed back then like `register-user-profile.ftl.`
+However, the default pages you will get (before you customize them) will always be the ones of Keycloak [v11.0.3](https://github.com/keycloak/keycloak/releases/tag/11.0.3) and some extra pages that didn't exist back then like `register-user-profile.ftl.`
 {% endhint %}
 
 ### Supported Keycloak version
@@ -60,7 +60,7 @@ To share your styles between your main app and your login pages you will need to
 
 </details>
 
-### Utility that needs to be installed
+### Utilities that need to be installed
 
 * `mvn` ([Maven](https://maven.apache.org)), `rm`, `mkdir`, `curl`, `unzip`.
 * `docker` must be up and running when running `start_keycloak_testing_container.sh`

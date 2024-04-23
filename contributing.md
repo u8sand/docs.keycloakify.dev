@@ -50,8 +50,8 @@ Now you are able to test your local version of Keycloakify in the test app and m
 If you want to link your local version of `keycloakify` in your own app instead of the `keycloakify-demo-app` just run `yarn link_in_test_app <your_app>`
 {% endhint %}
 
-Heads over the development instruction if you are not already familiar with the process of testing your Keycloakify themes:
+Head over to the development instructions if you are not already familiar with the process of testing your Keycloakify themes:
 
-{% content-ref url="developpement.md" %}
-[developpement.md](developpement.md)
+{% content-ref url="development.md" %}
+[development.md](development.md)
 {% endcontent-ref %}

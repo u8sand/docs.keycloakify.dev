@@ -2,9 +2,9 @@
 
 ### Some pages still have the default theme. Why?
 
-This project only support out of the box the most common user facing pages of Keycloak login.
+This project only supports, out of the box, the most common user facing pages of Keycloak login.
 
-To see the complete list of pages that Keycloak provide you can download the base theme with the following command
+To see the complete list of pages that Keycloak provides you can download the base theme with the following command
 
 `npx -p keycloakify download-builtin-keycloak-theme`&#x20;
 

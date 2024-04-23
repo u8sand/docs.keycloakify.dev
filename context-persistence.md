@@ -4,7 +4,7 @@ If, before logging in, a user has selected a specific language you don't want it
 
 Same goes for the dark mode, you don't want, if the user had it enabled to show the login page with light themes.
 
-The problem is that you are probably using `localStorage` to persist theses values across reload but, as the Keycloak pages are not served on the same domain that the rest of your app you won't be able to carry over states using `localStorage`.
+The problem is that you are probably using `localStorage` to persist these values across reloads but, as the Keycloak pages are not served on the same domain than the rest of your app you won't be able to carry over states using `localStorage`.
 
 The only reliable solution is to inject parameters into the URL before redirecting to Keycloak. We integrate with [`keycloak-js`](https://github.com/keycloak/keycloak-documentation/blob/master/securing\_apps/topics/oidc/javascript-adapter.adoc), by providing you a way to tell `keycloak-js` that you would like to inject some search parameters before redirecting.
 
@@ -12,9 +12,9 @@ The method also works with [`@react-keycloak/web`](https://www.npmjs.com/package
 
 You can implement your own mechanism to pass the states in the URL and restore it on the other side but we recommend using [`powerhooks/useGlobalState`](https://github.com/garronej/powerhooks#useglobalstate) from the library [`powerhooks`](https://www.powerhooks.dev) that provide an elegant way to handle states such as `isDarkModeEnabled`.
 
-Let's modify [the example](https://github.com/keycloak/keycloak-documentation/blob/master/securing\_apps/topics/oidc/javascript-adapter.adoc) from the official `keycloak-js` documentation to enables the relevant states of our app to be injected in the URL before redirecting.
+Let's modify [the example](https://github.com/keycloak/keycloak-documentation/blob/master/securing\_apps/topics/oidc/javascript-adapter.adoc) from the official `keycloak-js` documentation to enable the relevant states of our app to be injected in the URL before redirecting.
 
-Let's say we have a boolean state `isDarkModeEnabled` that define if the dark theme should be enabled.   &#x20;
+Let's say we have a boolean state `isDarkModeEnabled` that defines if the dark theme should be enabled.   &#x20;
 
 `useIsDarkModeEnabled.ts`
 
@@ -57,7 +57,7 @@ export function MyComponent(){
 }
 ```
 
-We can also update the state and track it's updates outside of react: &#x20;
+We can also update the state and track its updates outside of react: &#x20;
 
 ```tsx
 import { $isDarkModeEnabled } from "./useIsDarkModeEnabled";
@@ -122,4 +122,4 @@ keycloakInstance.init({
 //...
 ```
 
-If you really want to go the extra miles and avoid having the white flash of the blank html before the `js` bundle have been evaluated [here is a snippet](https://github.com/InseeFrLab/onyxia-web/blob/e1c1f309aaa3d5f860df39ba0b75cce89c88a9de/public/index.html#L117-L166) that you can place in your `public/index.html` if you are using `powerhooks/useGlobalState`.
+If you really want to go the extra miles and avoid having the white flash of the blank html before the `js` bundle has been evaluated [here is a snippet](https://github.com/InseeFrLab/onyxia-web/blob/e1c1f309aaa3d5f860df39ba0b75cce89c88a9de/public/index.html#L117-L166) that you can place in your `public/index.html` if you are using `powerhooks/useGlobalState`.
